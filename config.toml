@@ -1,4 +1,4 @@
-baseurl = ""
+baseurl = "https://flourishing-trifle-2a7828.netlify.app/"
 title = "nourako"
 theme = "hugo-theme-console"
 languageCode = "en-us"
