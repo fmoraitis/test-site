@@ -39,26 +39,18 @@
 </div> -->
 
 <div class="image-grid">
-   
-    {{ with .Site.GetPage "/works" }}
-    {{/* range first 5 (sort .Data.Pages "Date" "desc")*/}}
-    {{ range  (sort .Data.Pages "Date" "desc")}}
-    <a href="{{ .Permalink }}" title="{{ .Title }}">
-
-        {{ $image := .Page.Resources.GetMatch .Params.image }}
-        {{ with $image }}
-        {{ $thumb := .Resize "500x" }}
-       
-        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-       
-        {{end}}
-
-    </a>
-   
+    {{ with .Site.GetPage "/photos" }}
+        {{ range  (sort .Data.Pages "Date" "desc")}}
+            <a href="{{ .Permalink }}" title="{{ .Title }}">
+            {{ $image := .Page.Resources.GetMatch .Params.image }}
+            {{ with $image }}
+                {{ $thumb := .Resize "400x" }}
+                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+            {{end}}
+            </a>
+        {{ end }}
     {{ end }}
-
-    {{ end }}
-</div>
+    </div>
 
 <h1>About</h1>
 
