@@ -1,0 +1,79 @@
+{{ define "main" }}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="{{ "js/main.js" | absURL }}"></script>
+<script src="{{ "js/highlight.js" | absURL }}"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+{{ range .Site.Params.customJS }}
+<script src="{{ . | absURL }}"></script>
+{{ end }}
+
+{{ template "_internal/google_analytics.html" . }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+    integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- <script src="/js/mysketch.js" type="text/javascript"></script> -->
+
+<script src="/js/fan.js"></script>
+<script src="/js/fourier.js"></script>
+<script src="/js/sketch.js"></script>
+
+
+<!-- <h1>Latest posts</h1>
+
+<div class="posts-list">
+{{ with .Site.GetPage "/posts" }}
+    {{ range first 3 (sort .Data.Pages "Date" "desc" (where .Pages ".Params.private" "!=" true))}}
+        <div class="post">
+            <p>
+                <div class="date">{{ .PublishDate.Format "Jan. 2, 2006" }}</div>
+                <h1><a href="{{ .Permalink }}" title="{{ .Title }}">{{ .Title }}</a></h1>
+                {{ .Summary }}
+            </p>
+        </div>    
+    {{ end }}
+{{ end }}
+</div> -->
+
+<div class="image-grid">
+   
+    {{ with .Site.GetPage "/works" }}
+    {{/* range first 5 (sort .Data.Pages "Date" "desc")*/}}
+    {{ range  (sort .Data.Pages "Date" "desc")}}
+    <a href="{{ .Permalink }}" title="{{ .Title }}">
+
+        {{ $image := .Page.Resources.GetMatch .Params.image }}
+        {{ with $image }}
+        {{ $thumb := .Resize "500x" }}
+       
+        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
+       
+        {{end}}
+
+    </a>
+   
+    {{ end }}
+
+    {{ end }}
+</div>
+
+<h1>About</h1>
+
+<p>
+    Fanouris Moraitis (b. 1980) lives and works in Athens. His work
+    is focused on world-building through the mediums of analog and
+    digital sculpture, coding and self-publishing of small trolling
+    (over-identification) stories. He is a graduate in Electronic and
+    Computer Engineering of the Technical University of Crete and
+    has obtained an Msc. in Art and Technology from Chalmers University
+    of Technology in Sweden with a scholarship from the A.S. Onassis
+    Foundation. e also attended classes at the Art Students League
+    in New York aHnd is a graduate of the Athens School of Fine
+    Arts where he teaches periodically the course Digital Sculpture.
+    <!-- <a href="about/">(more)</a> -->
+</p>
+
+{{ end }}

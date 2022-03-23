@@ -1,0 +1,8 @@
+
+{{ $image := (.Page.Resources.ByType "image") }}
+{{ with $image }}
+    {{ range . }}
+   
+    <img src="{{ .Permalink }}" />
+    {{ end }}
+{{ end }}
