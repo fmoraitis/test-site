@@ -1,7 +1,7 @@
 +++
 image = "warsaw-poland.jpg"
 date = "2020-02-09"
-title = "warsaw-poland"
+title = " "
 type = "gallery"
 +++
 
