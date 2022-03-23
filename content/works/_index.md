@@ -1,4 +1,4 @@
 +++
-title = "/"
+title = "works"
 type = "gallery"
 +++

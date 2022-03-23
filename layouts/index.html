@@ -39,7 +39,7 @@
 </div> -->
 
 <div class="image-grid">
-    {{ with .Site.GetPage "/photos" }}
+    {{ with .Site.GetPage "/works" }}
         {{ range  (sort .Data.Pages "Date" "desc")}}
             <a href="{{ .Permalink }}" title="{{ .Title }}">
             {{ $image := .Page.Resources.GetMatch .Params.image }}
