@@ -1,4 +1,4 @@
-baseurl = "https://nourako.netlify.app/"
+baseurl = "https://nourako.netlify.app"
 title = "nourako"
 theme = "hugo-theme-console"
 languageCode = "en-us"
