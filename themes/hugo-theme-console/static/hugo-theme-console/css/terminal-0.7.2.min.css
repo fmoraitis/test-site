@@ -200,6 +200,8 @@ pre code {
     font-family: var(--mono-font-stack)
 }
 
+
+
 .terminal .logo,
 .terminal blockquote,
 .terminal code,
@@ -324,11 +326,12 @@ ol ol {
     width: 100%
 }
 
+
 .terminal-nav {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    
+    /* position: fixed; */
+    z-index: 1;
     align-items: flex-start
    
     
