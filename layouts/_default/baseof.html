@@ -55,7 +55,11 @@
         </div>
       </header>
       <nav class="terminal-menu">
-
+        <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+          {{ range .Site.Params.navlinks }}
+          <li><a href="{{ absURL .url }}" typeof="ListItem">{{ .name }}</a></li>
+          {{ end }}
+      </ul>
       </nav>
     </div>
   </div>

@@ -9,7 +9,7 @@ let path = [];
 
 function setup() {
   var myCanvas = createCanvas(windowWidth, windowHeight);
-  myCanvas.position(0,windowHeight/2)
+  myCanvas.position(0,0)
   //myCanvas.class('backgroundsketch');
   myCanvas.style('z-index', '-1')
 
@@ -40,7 +40,7 @@ function epiCycles(x, y, rotation, fourier) {
     stroke(255, 100);
     noFill();
     push()
-    translate(0,  0)
+    translate(0, 0)
     stroke(255,0,0,100);
     ellipse(prevx, prevy, radius * 2);
     stroke(255);
@@ -63,7 +63,7 @@ function draw() {
  
 frameRate(20);
 let v = epiCycles(width / 2,height/2 , 0, fourier);
- 
+ translate(0,  0)
 //let vy = epiCycles(100, height / 2 + 100, HALF_PI, fourierY);
   // = createVector(vx.x, vx.y);
   path.unshift(v);// adds to the begining of the array
