@@ -3,22 +3,15 @@ date = "2016-11-05T21:05:33+05:30"
 title = "About"
 +++
  
+ Ο **Νουράκο** ζει και εργάζεται στην Αθήνα. Στα έργα του καταγράφονται εικόνες κόσµων µέσα από την αναλογική και ψηφιακή πλαστική, την παραγωγή soſtware και τις αυτοεκδόσεις μικρών βιβλίων. Είναι πτυχιούχος Ηλεκτρονικός Μηχανικός & Μηχανικός Υπολογιστών του Πολυτεχνείου Κρήτης και απέκτησε MSc. στην Τέχνη και Τεχνολογία από το Chalmers University of Technology στη Σουηδία µε υποτροφία του Ιδρύματος Α. Σ. Ωνάση. Παρακολούθησε μαθήματα στο Art Students League της Νέας Υόρκης και είναι απόφοιτος του Α΄ Εργαστηρίου Γλυπτικής της Ανωτάτης Σχολής Καλών Τεχνών Αθήνας όπου εκεί διδάσκει  το μάθημα Ψηφιακή Γλυπτική.
+
 <!-- A minimal, responsive and light theme for Hugo inspired by Linux console. 
 
 ![Console](https://github.com/mrmierzejewski/hugo-theme-console/blob/master/images/preview.png?raw=true) -->
 
 
-
-**Nourako** ([instagram](https://www.instagram.com/nourako999/)) lives and works in Athens. His work
-        is focused on world-building through the mediums of analog and
-        digital sculpture, coding and self-publishing of small trolling
-        stories. He is a graduate in Electronic and
-        Computer Engineering of the Technical University of Crete and
-        has obtained an Msc. in Art and Technology from Chalmers University
-        of Technology in Sweden with a scholarship from the A.S. Onassis
-        Foundation. He also attended classes at the Art Students League
-        in New York and is a graduate of the Athens School of Fine
-        Arts where he teaches  the course Digital Sculpture.
+ <!-- ([instagram](https://www.instagram.com/nourako999/)) lives and works in Athens. His work -->
+       
 <!-- ## Installation
 
 ```
