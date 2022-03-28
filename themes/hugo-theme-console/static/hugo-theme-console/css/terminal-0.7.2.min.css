@@ -1,4 +1,12 @@
+.{
 
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
 
 
 :root {
@@ -11,7 +19,7 @@
     --page-width: 60em;
     --font-color: #151515;
     --invert-font-color: #fff;
-    --primary-color: #e0311a;
+    --primary-color: #e98686;
     --secondary-color: #727578;
     --error-color: #0988d2;
     --progress-bar-background: #727578;

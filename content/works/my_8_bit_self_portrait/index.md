@@ -1,5 +1,5 @@
 +++
-image = "8bit02.JPG"
+image = "8bit02THUMB.PNG"
 date = "2020-01-21"
 title = " "
 type = "gallery1"
