@@ -18,7 +18,7 @@ osc(0.1, 0.2, 10)
     .diff(voronoi(3).shift(0.6))
     .diff(osc(2, 0.015, 1.1).rotate())
     // .brightness(2.2).contrast(0.2).saturate(0.9)
-    .brightness(2.2).contrast(0.2).saturate(2.5)
+    .brightness(2.2).contrast(0.2).saturate(2)
     .scale(1, () => window.innerHeight / window.innerWidth)
     .out()
 
