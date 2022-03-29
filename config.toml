@@ -2,7 +2,7 @@ baseurl = "https://www.nourako.com/"
 title = "nourako"
 theme = "hugo-theme-console"
 languageCode = "en-us"
-
+enableEmoji = true 
 
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
