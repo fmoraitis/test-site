@@ -22,8 +22,14 @@ languageCode = "en-us"
   url = "works/"
 
 [[params.navlinks]]
+   name = "teaching/"
+   url = "teaching/"
+
+[[params.navlinks]]
    name = "about/"
    url = "about/"
+
+
 
   # [[params.navlinks]]
    #name = "instagram/"
