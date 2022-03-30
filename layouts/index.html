@@ -16,7 +16,7 @@
 <div class="image-grid">
     {{ with .Site.GetPage "/works" }}
         {{ range  (sort .Data.Pages "Date" "desc")}}
-            <a  style="color:#fff" href="{{ .Permalink }}" title="{{ .Title }}">
+            <a href="{{ .Permalink }}" title="{{ .Title }}">
             {{ $image := .Page.Resources.GetMatch .Params.image }}
             {{ with $image }}
                 {{ $thumb := .Resize "700x" }}
