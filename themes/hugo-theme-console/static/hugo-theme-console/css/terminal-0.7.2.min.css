@@ -61,7 +61,7 @@ a {
 
 a:hover {
     background-color: #fff;
-    color: var(--invert-font-color)
+    /* color: var(--invert-font-color) */
 }
 
 em {
