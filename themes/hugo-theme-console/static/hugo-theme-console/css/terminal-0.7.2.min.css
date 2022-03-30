@@ -1,5 +1,5 @@
 :root {
-    --global-font-size: 15px;
+    --global-font-size: 20px;
     --global-line-height: 1.4em;
     --global-space: 10px;
     --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -61,7 +61,7 @@ a {
 
 a:hover {
     background-color: #fff;
-    /* color: var(--invert-font-color) */
+    color: var(--font-color)
 }
 
 em {
@@ -383,7 +383,7 @@ ol.terminal-toc li a {
     display: block;
     width: 100%;
     border: none;
-    color: var(--secondary-color)
+    color:#726cb4
 }
 
 .terminal-menu li a.active {
@@ -392,6 +392,7 @@ ol.terminal-toc li a {
 
 .terminal-menu li a:hover {
     background: 0 0;
+    background-color: #fff;
     color: inherit
 }
 
