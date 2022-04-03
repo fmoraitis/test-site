@@ -31,7 +31,7 @@
 }
 
 :root {
-    --global-font-size:15px;
+    --global-font-size:17px;
     --global-font-color: #444;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
     --font-stack: Roboto Mono, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 850px) {
     :root {
-        --global-font-size: 14px;
+        --global-font-size: 15px;
         --global-font-color: #444;
         --global-line-height: 1.6em;
         --page-width: 70em;
@@ -72,7 +72,7 @@
 
 body {
     font-family: var(--font-stack);
-    font-size: var(--global-font-size);
+    font-size: 14px;
     background-color: #fff;
     margin-bottom: 75px;
 }
@@ -147,6 +147,7 @@ strong {
 
 .logo {
     font-weight: normal;
+    
 }
 
 .terminal-menu li {
@@ -226,6 +227,7 @@ figure {
         align-items: flex-start;
         flex-direction: column;
         display: flex;
+       
     }
 
     .terminal-menu ul {
@@ -238,6 +240,7 @@ figure {
 
     .terminal-menu li {
         margin-right: 20px;
+        
     }
 
     .logo {
