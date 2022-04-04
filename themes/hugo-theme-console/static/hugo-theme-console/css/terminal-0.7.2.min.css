@@ -61,6 +61,8 @@ a {
 
 a:hover {
     background-color: #fff;
+    border-style:  solid dashed;
+    border-color: #726cb4;
     color: var(--font-color)
 }
 
@@ -393,6 +395,8 @@ ol.terminal-toc li a {
 .terminal-menu li a:hover {
     background: 0 0;
     background-color: #fff;
+    border-style:  solid dashed;
+    border-color: #726cb4;
     color: inherit
 }
 
@@ -435,7 +439,8 @@ p {
 }
 
 img {
-    width: 100%
+    width: 100%;
+    height:100%
 }
 
 .progress-bar {
