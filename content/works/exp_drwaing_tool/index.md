@@ -14,7 +14,8 @@ type = "gallery1"
 με τις ανάγκες του μαθήματος.  
 
 Προτίνεται να το δείτε με [firefox](https://www.mozilla.org/en-US/exp/firefox/new/)  και θα πρέπει να έχετε και webcam με μικρόφωνο ώστε να μπορεί ο αλγόριθμος να σας ακούει :smiley:. Μιλήστε ή βάλτε μουσική και σχεδιάστε με το mouse. 
-## [Link to site](https://fmoraitis.github.io/Draw-with-sound-/) 
+## 
+[Link to site](https://fmoraitis.github.io/Draw-with-sound-/) 
 
 
 
