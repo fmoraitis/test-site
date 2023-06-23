@@ -21,9 +21,9 @@ enableEmoji = true
   name = "works/"
   url = "works/"
 
-[[params.navlinks]]
-   name = "teaching/"
-   url = "teaching/"
+#[[params.navlinks]]
+ #  name = "teaching/"
+  # url = "teaching/"
 
 [[params.navlinks]]
    name = "about/"
