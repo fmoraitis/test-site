@@ -1,0 +1,11 @@
+ Open a terminal in your project folder:
+   cd c:\Nourako_Site\test-site
+
+2. Add all changes:
+   git add .
+
+3. Commit your changes:
+   git commit -m "Update site and netlify.toml"
+
+4. Push to GitHub:
+   git push
