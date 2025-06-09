@@ -79,10 +79,10 @@ window.addEventListener('DOMContentLoaded', function() {
       vec2 uv = vUv * u_res;
       float d = distance(uv, u_mouse);
 
-      // Noisy, animated perimeter
-      float baseRadius = 80.0;
+      // Oscillating, noisy, animated perimeter
+      float baseRadius = 100.0 + sin(u_time * 1.6) * 25.0; // oscillates between 60 and 100
       float angle = atan(uv.y - u_mouse.y, uv.x - u_mouse.x);
-      float noise = snoise(vec2(angle * 2.0, u_time * 0.7 + angle * 0.2));
+      float noise = snoise(vec2(angle * 2.0, u_time * 0.1 + angle * 0.2));
       float wavyRadius = baseRadius + noise * 32.0; // 32 = noise amplitude
 
       float edge = smoothstep(wavyRadius + 4.0, wavyRadius, d);
