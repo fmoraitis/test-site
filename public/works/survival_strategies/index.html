@@ -261,12 +261,18 @@
 
     <script src="https://unpkg.com/hydra-synth"></script>
     <script  src="/js/hydraBackground.js" defer ></script>
+    <script src="/js/overlayWebGL.js" defer></script>
+
     
 
   
   
   
-
+<style>
+#overlayCanvas {
+  mix-blend-mode: overlay;  
+}
+</style>
 </head>
 <body class="terminal">
   <canvas style="z-index: -1;
@@ -285,8 +291,8 @@
           <a href="http://localhost:1313/"
             class="no-style ">nourako</a>:~#
           <a
-            href='http://localhost:1313/works'>works</a>/<a
-            href='http://localhost:1313/works/survival_strategies'>survival_strategies</a>/
+            href='http://localhost:1313/works/survival_strategies/http://localhost:1313/works'>works</a>/<a
+            href='http://localhost:1313/works/survival_strategies/http://localhost:1313/works/survival_strategies'>survival_strategies</a>/
         </div>
       </header>
       <nav class="terminal-menu">
@@ -538,5 +544,10 @@ H συμπλοκή ανθρώπου και ζώου είναι από τις π�
 
     
   </div>
+
+<canvas id="overlayCanvas"
+  style="position:fixed; left:0; top:0; width:100vw; height:100vh; pointer-events:none; z-index:1000;">
+</canvas>
+
 </body>
 </html>

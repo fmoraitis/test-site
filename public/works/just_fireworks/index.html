@@ -65,6 +65,8 @@ Link to site"/>
 
     <script src="https://unpkg.com/hydra-synth"></script>
     <script  src="/js/hydraBackground.js" defer ></script>
+    <script src="/js/overlayWebGL.js" defer></script>
+
     
 
   
@@ -118,5 +120,10 @@ Link to site"/>
 
     
   </div>
+
+<canvas id="overlayCanvas"
+  style="position:fixed; left:0; top:0; width:100vw; height:100vh; pointer-events:none; z-index:1000;">
+</canvas>
+
 </body>
 </html>

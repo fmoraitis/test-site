@@ -33,6 +33,8 @@
     <!-- import the latest version of hydra synth -->
     <script src="https://unpkg.com/hydra-synth"></script>
     <script  src="/js/hydraBackground.js" defer ></script>
+    <script src="/js/overlayWebGL.js" defer></script>
+
     <!--
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
     integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
@@ -44,7 +46,11 @@
   <!-- <script src="/js/fan.js"></script>
   <script src="/js/fourier.js"></script>
   <script src="/js/sketch.js"></script> -->
-
+<style>
+#overlayCanvas {
+  mix-blend-mode: overlay; /* try: overlay, screen, multiply, etc. */
+}
+</style>
 </head>
 <body class="terminal">
   <canvas style="z-index: -1;
@@ -81,5 +87,10 @@
     {{ end }}
     {{ partial "footer.html" . }}
   </div>
+
+<canvas id="overlayCanvas"
+  style="position:fixed; left:0; top:0; width:100vw; height:100vh; pointer-events:none; z-index:1000;">
+</canvas>
+
 </body>
 </html>
