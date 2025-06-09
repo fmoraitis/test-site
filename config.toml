@@ -4,6 +4,13 @@ theme = "hugo-theme-console"
 languageCode = "en-us"
 enableEmoji = true 
 
+ignoreLogs = ["warning-goldmark-raw-html"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = false
@@ -12,26 +19,22 @@ enableEmoji = true
   # To disable animations, please remove or comment animationStyle parameter
   animateStyle = "animated zoomIn fast" 
 
-  # [[params.navlinks]]
-   #name = "nourako/"
-   #url = "/"
+  # Social links (replacing deprecated .Site.Social)
+  [[params.social]]
+  name = "Instagram"
+  url = "https://www.instagram.com/nourako999/"
 
-  
+  [[params.social]]
+  name = "GitHub"
+  url = "https://github.com/nourako"
+
+  # Author information (replacing deprecated .Site.Authors)
+  author = "Nourako"
+
   [[params.navlinks]]
   name = "works/"
   url = "works/"
 
-#[[params.navlinks]]
- #  name = "teaching/"
-  # url = "teaching/"
-
-[[params.navlinks]]
-   name = "about/"
-   url = "about/"
-
-
-
-  # [[params.navlinks]]
-   #name = "instagram/"
-   #url = "https://www.instagram.com/nourako999/"
-   
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"

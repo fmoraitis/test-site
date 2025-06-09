@@ -18,4 +18,3 @@ type = "gallery1"
 
 
 <!-- The [Grand Canyon](https://en.wikipedia.org/w/index.php?title=Grand_Canyon&oldid=952699432)  -->
-

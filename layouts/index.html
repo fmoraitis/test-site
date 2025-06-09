@@ -15,18 +15,19 @@
 </br>
 <div class="image-grid">
     {{ with .Site.GetPage "/works" }}
-        {{ range  (sort .Data.Pages "Date" "desc")}}
+        {{ range (sort .Data.Pages "Date" "desc") }}
             <a href="{{ .Permalink }}" title="{{ .Title }}">
-            {{ $image := .Page.Resources.GetMatch .Params.image }}
-            {{ with $image }}
-                {{ $thumb := .Resize "700x" }}
-                <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" class="img-responsive">
-            {{end}}
+                {{ with .Page.Resources.GetMatch .Params.image }}
+                    {{ $thumb := .Resize "700x" }}
+                    <img src="{{ $thumb.RelPermalink }}" alt="{{ $.Title }}" class="img-responsive">
+                {{ else }}
+                    <!-- Optional: fallback image if no resource found -->
+                    <img src="/images/default-thumb.jpg" alt="No image" class="img-responsive">
+                {{ end }}
             </a>
         {{ end }}
     {{ end }}
-    </div>
-    
+</div>
 
 <!-- <h1>Latest posts</h1> -->
 
@@ -44,6 +45,4 @@
 {{ end }}
 </div> -->
 
-
-    
 {{ end }}

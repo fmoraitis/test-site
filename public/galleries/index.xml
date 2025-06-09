@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Galleries on nourako</title>
+    <link>http://localhost:1313/galleries/</link>
+    <description>Recent content in Galleries on nourako</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/galleries/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gallery1</title>
+      <link>http://localhost:1313/galleries/gallery1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/galleries/gallery1/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;    &#xA;   &#xA;        &lt;img src=&#34;http://localhost:1313/galleries/gallery1/img/Pope-Edouard-de-Beaumont-1844.jpg&#34; /&gt;&#xA;        &#xA;    &#xA;   &#xA;        &lt;img src=&#34;http://localhost:1313/galleries/gallery1/img/Victor_Hugo-Hunchback.jpg&#34; /&gt;&#xA;        &#xA;    &#xA;   &#xA;        &lt;img src=&#34;http://localhost:1313/galleries/gallery1/img/esmeralda.jpg&#34; /&gt;&#xA;        &#xA;    &#xA;   &#xA;        &lt;img src=&#34;http://localhost:1313/galleries/gallery1/img/notebook.jpg&#34; /&gt;&#xA;        &#xA;    &#xA;&#xA;&#xA;&#xA;&lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Palace_of_Culture_and_Science&amp;amp;oldid=945815549&#34;&gt;Palace of Culture and Science&lt;/a&gt; (Polish: Pałac Kultury i Nauki), is a notable high-rise building in central Warsaw, Poland. With a total height of 237 metres (778 ft) it is the tallest building in Poland, the 5th-tallest building in the European Union (including spire) and one of the tallest on the European continent.&#xA;Constructed in 1955, it houses various public and cultural institutions such as cinemas, theatres, libraries, sports clubs, university faculties and authorities of the Polish Academy of Sciences.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
