@@ -31,10 +31,10 @@ ignoreLogs = ["warning-goldmark-raw-html"]
   # Author information (replacing deprecated .Site.Authors)
   author = "Nourako"
 
-  [[params.navlinks]]
-  name = "works/"
-  url = "works/"
+  #[[params.navlinks]]
+  #name = "works/"
+  #url = "works/"
 
-  [[params.navlinks]]
-  name = "about/"
-  url = "about/"
+ # [[params.navlinks]]
+  #name = "about/"
+  #url = "about/"
