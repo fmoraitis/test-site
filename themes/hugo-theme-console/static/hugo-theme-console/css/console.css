@@ -330,6 +330,16 @@ figure {
         padding-top: 5px;
     }
 
+    .terminal-nav,
+    .logo,
+    .terminal-menu,
+    .terminal-menu ul,
+    .terminal-menu li,
+    .terminal-menu a {
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+    }
 }
 
 .image-grid a:hover,
