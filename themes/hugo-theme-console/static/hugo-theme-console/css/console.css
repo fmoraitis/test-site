@@ -342,6 +342,20 @@ figure {
     }
 }
 
+@media only screen and (max-width: 600px) {
+  .logo.terminal-prompt a.no-style {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 0.5em 0.7em;
+    font-size: 1.2em;
+    text-align: left;
+    /* Optional for visual feedback */
+    /* background: #fff; */
+    /* border-radius: 6px; */
+  }
+}
+
 .image-grid a:hover,
 .image-grid a:focus,
 .image-grid a:hover img,
